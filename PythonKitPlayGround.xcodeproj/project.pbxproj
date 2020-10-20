@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		EDCBBD4A253F169A00C92FCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCBBD49253F169A00C92FCA /* Assets.xcassets */; };
 		EDCBBD4D253F169A00C92FCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDCBBD4C253F169A00C92FCA /* Preview Assets.xcassets */; };
 		EDCBBD50253F169A00C92FCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDCBBD4E253F169A00C92FCA /* Main.storyboard */; };
+		EDCBBD5B253F188200C92FCA /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = EDCBBD5A253F188200C92FCA /* PythonKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDCBBD5B253F188200C92FCA /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +92,9 @@
 			dependencies = (
 			);
 			name = PythonKitPlayGround;
+			packageProductDependencies = (
+				EDCBBD5A253F188200C92FCA /* PythonKit */,
+			);
 			productName = PythonKitPlayGround;
 			productReference = EDCBBD42253F169800C92FCA /* PythonKitPlayGround.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = EDCBBD39253F169800C92FCA;
+			packageReferences = (
+				EDCBBD59253F188200C92FCA /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = EDCBBD43253F169800C92FCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -348,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EDCBBD59253F188200C92FCA /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EDCBBD5A253F188200C92FCA /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EDCBBD59253F188200C92FCA /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EDCBBD3A253F169800C92FCA /* Project object */;
 }
